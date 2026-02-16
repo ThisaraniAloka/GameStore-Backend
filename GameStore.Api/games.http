@@ -1,0 +1,30 @@
+GET http://localhost:5050/games
+
+###
+
+GET  http://localhost:5050/games/5
+
+###
+POST http://localhost:5050/games
+Content-Type: application/json
+
+{
+    "name": "Super Mario Bros, wonder",
+    "genre": "Action-adventure",
+    "price": 1000.90,
+    "releaseDate": "2017-03-03"
+}
+
+###
+PUT http://localhost:5050/games/10
+Content-Type: application/json
+
+{
+    "name": "Street Fighter new",
+    "genre": "Fighting new",
+    "price": 199.99,
+    "releaseDate": "1987-12-27"
+}
+
+###
+DELETE http://localhost:5050/games/1
